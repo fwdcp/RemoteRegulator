@@ -2,7 +2,7 @@ script(src='/dashboard/MagicMirror/components/underscore/underscore-min.js')
 script(src='/dashboard/MagicMirror/components/rivets/dist/rivets.bundled.min.js')
 script(src='/dashboard/RemoteRegulator/components/bootstrap/tabs.js')
 
-(role="tabpanel")
+div(role="tabpanel")
     ul.nav.nav-tabs(role="tablist")
         li(rv-each-client="data.consoles", role="presentation"): a(rv-href="console.steam | prepend '#console-'", role="tab", data-toggle="tab", rv-href="console.name")
     .tab-content
