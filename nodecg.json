@@ -1,0 +1,13 @@
+{
+    "name": "RemoteRegulator",
+    "version": "0.1.0",
+    "nodecgDependency": "^0.5",
+    "homepage": "https://github.com/fwdcp/RemoteRegulator",
+    "authors": [
+      "thesupremecommander"
+    ],
+    "description": "a framework for remote console access to TF2 clients",
+    "extension": {
+        "path": "extension.js"
+    }
+}
