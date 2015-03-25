@@ -1,3 +1,5 @@
+var underscore = require('underscore');
+
 module.exports = function(nodecg) {
     nodecg.declareSyncedVar({
         name: 'clients',
