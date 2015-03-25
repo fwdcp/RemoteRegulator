@@ -1,0 +1,9 @@
+[
+    {
+        "name": "remoteregulator",
+        "title": "RemoteRegulator",
+        "width": 6,
+        "file": "panel.jade",
+        "faIcon": "fa-desktop"
+    }
+]
