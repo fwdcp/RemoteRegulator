@@ -1,0 +1,18 @@
+script(src='/dashboard/MagicMirror/components/underscore/underscore-min.js')
+script(src='/dashboard/MagicMirror/components/rivets/dist/rivets.bundled.min.js')
+script(src='/dashboard/RemoteRegulator/components/bootstrap/tabs.js')
+
+(role="tabpanel")
+    ul.nav.nav-tabs(role="tablist")
+        li(rv-each-client="data.consoles", role="presentation"): a(rv-href="console.steam | prepend '#console-'", role="tab", data-toggle="tab", rv-href="console.name")
+    .tab-content
+        .tab-pane(rv-id="console.steam | prepend 'console-'", role="tabpanel")
+            .container-fluid
+                .row
+                    .col-md-12
+                        pre.console-output.pre-scrollable
+                .row
+                    .col-md-10
+                        input.console-input.form-control(type="text", placeholder="command")
+                    .col-md-2
+                        button.console-submit.btn.btn-primary.btn-block(type="button") Submit
