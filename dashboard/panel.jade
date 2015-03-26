@@ -4,7 +4,7 @@ script(src='/dashboard/RemoteRegulator/components/bootstrap/tabs.js')
 
 div(role="tabpanel")
     ul.nav.nav-tabs(role="tablist")
-        li(rv-each-client="data.consoles", role="presentation"): a(rv-href="console.steam | prepend '#console-'", role="tab", data-toggle="tab", rv-href="console.name")
+        li(rv-each-client="data.consoles", role="presentation"): a(rv-href="console.steam | prepend '#console-'", role="tab", data-toggle="tab", rv-text="console.name")
     .tab-content
         .tab-pane(rv-id="console.steam | prepend 'console-'", role="tabpanel")
             .container-fluid
